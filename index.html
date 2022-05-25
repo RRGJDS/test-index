@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>복자 녹색가게</title>
+        <link rel="stylesheet" href="studentMarket.css">
+        <script type="text/javascript">
+            HapE();
+            var kdC = 0;
+            var kdS = 0;
+
+            document.onkeydown=keycheck;
+            document.onkeyup=uncheckCtrlshift;
+
+            function keycheck(){
+                switch(event.keyCode){
+                    case 123:event.keyCode='';return false; break;//F12
+
+                    case 17:event.keyCode='';kdC=1;return false; break;//컨트롤
+                }
+
+                if(kdC) return false;
+            }
+
+            function uncheckCtrlshift(){
+                if(event.keyCode==17)       kdC=0;
+                if(event.keyCode==16)       kdS=0;
+            }
+
+            function click() {
+                if(event.button==2||event.button==3) alert("우클릭을 금지합니다."); } 
+                document.onmousedown=click;
+        </script>
+    </head>
+    <body>
+        <div class="button_">
+                <img src="img/녹색가게.jpg" alt="복자 녹색 가게" class="F">
+                <button class="menu">위치 및 이용방법</button>
+                <button class="menu">녹색 물품 구매</button>
+                <button class="menu">학생 물품 구매</button>
+                <button class="menu">구매 안내</button>
+                <button class="menu">문의 방법</button>
+        </div>
+        <h1><br><br><br><br><br><br><br>
+            녹색가게에서 필요한 물건을 사고 지구도 지키고 어려운 사람들도 도와요~
+        </h1>
+        <p>
+            녹색가게에서 필요한 물건을 사고 지구도 지키고 어려운 사람들도 도와요~
+        </p>
+    </body>
+</html>

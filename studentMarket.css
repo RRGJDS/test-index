@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    font-family: 'HS유지체', Times, serif;
+}
+
+body{
+    background-color: rgb(226, 209, 183);
+    margin: 0;
+}
+
+.F{
+    width: 100%;
+}
+
+h1{
+    margin: 0;
+    color: black;
+}
+
+p{
+    margin: 0;
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.menu{
+    font-size: 25px;
+    width:20%;
+    height: 80px;
+    background-color: rgb(206, 61, 44);
+    color: rgb(250, 250, 250);
+    /*모서리 둥글게*/
+    border-bottom-left-radius:60px;
+    border-bottom-right-radius:60px;
+    
+}
+.menu:hover{
+    background-color: rgb(161, 33, 19);
+    color: rgb(250, 250, 250);
+}
+
+.button_{
+    /* position: relative; */
+    /* border: 1px solid black; */
+    line-height: 0;
+    font-size: 0;
+    position: fixed;
+}
+
+button{
+    /* x축 y축 블러값 */
+    font-size: 19px;
+    border: none;
+    /*부드럽게 변환*/
+    transition: 0.3s;
+}
+
+/*눌렀을 때*/
+button:focus{
+    outline: 0;
+}
+
+/*마우스를 올렸을 때*/
+button:hover{
+    /*마우스 누름 버튼모양으로*/
+    cursor: pointer;
+}
