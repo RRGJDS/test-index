@@ -6,20 +6,49 @@
 body{
     background-color: rgb(226, 209, 183);
     margin: 0;
+    /* 드래그방지 */
+    -ms-user-select: none; 
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .F{
     width: 100%;
 }
 
+.F1{
+    position: absolute;
+    width: 25%;
+    margin-top: 100px;
+    bottom: 0;
+}
+
+.main_box{
+    position: absolute;
+    border-radius:60px;
+    padding: 1% 3%;
+    text-align: center;
+    color: rgb(124,68,7);
+    background-color: rgb(221, 192, 136);
+    width: 1100px;
+    height: 450px;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    margin-top: 18%;
+}
+
 h1{
-    margin: 0;
-    color: black;
+    line-height: 110%;
+    margin: 3%;
+    font-size: 50px;
 }
 
 p{
-    margin: 0;
-    font-size: 32px;
+    line-height: 130%;
+    padding: 0 10%;
+    font-size: 30px;
     font-weight: lighter;
 }
 
@@ -40,11 +69,12 @@ p{
 }
 
 .button_{
-    /* position: relative; */
+    position: relative;
     /* border: 1px solid black; */
     line-height: 0;
     font-size: 0;
     position: fixed;
+    /* display: flex; */
 }
 
 button{
