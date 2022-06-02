@@ -78,7 +78,7 @@ body{
     transform: translate(-50%, 0%);
     left: 50%;
     margin-top: 18%;
-    margin-left: 8%;
+    margin-left: 9%;
 }
 
 h1{
@@ -113,8 +113,7 @@ p{
     border-radius: 30px;
     z-index: -1;
     left: 30%;
-    margin-top: 18%;
-    
+    margin-top: 18%;    
 }
 
 .head{
@@ -159,6 +158,10 @@ p{
     color: rgb(250, 250, 250);
 }
 
+/* .menu:active+.menu:checked{
+    background-color: rgb(161, 33, 19);
+} 이거 아님*/
+
 .button_{
     position: relative;
     /* border: 1px solid black; */
@@ -185,4 +188,10 @@ button:focus{
 button:hover{
     /*마우스 누름 버튼모양으로*/
     cursor: pointer;
+}
+
+.Z{
+    position: absolute;
+    margin: 0;
+    height: 3%;
 }
