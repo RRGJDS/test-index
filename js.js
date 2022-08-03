@@ -4,7 +4,7 @@ src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemach
 
 const URL = "./model/";
 
-let model, webcam, labelContainer, maxPredictions;
+let model, webcam, labelContainer, maxPredictions, tmImage;
 
 // Load the image model and setup the webcam
 async function init() {
