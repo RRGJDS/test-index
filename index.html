@@ -68,10 +68,10 @@
             labelContainer.childNodes[0].innerHTML = "호랑이";
         }
         else if(prediction[1].className=="lion" && prediction[1].probability.toFixed(2) >= 0.80){
-            labelContainer.childNodes[1].innerHTML = "사자";
+            labelContainer.childNodes[0].innerHTML = "사자";
         }
         else if(prediction[2].className=="elephant" && prediction[2].probability.toFixed(2) >= 0.80){
-            labelContainer.childNodes[2].innerHTML = "코끼리";
+            labelContainer.childNodes[0].innerHTML = "코끼리";
         }
         else{
             labelContainer.childNodes[0].innerHTML = "인식할 수 없습니다. 조금 더 가까이 찍어주세요.";
