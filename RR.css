@@ -1,0 +1,74 @@
+body{
+    text-align: center;
+    font-family: 'KyoboHand';
+    background-color: rgb(218, 227, 243);
+    color: rgb(51, 63, 80);
+    /* 드래그방지 */
+    -ms-user-select: none; 
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* 질문 이미지 */
+.problem_img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* 질문영역 */
+.Q{
+    margin-bottom: 30px;
+}
+
+/* 돌아가기 버튼 */
+.return{
+    width:100px;
+    height: 30px;
+    font-size: 14px;
+}
+
+/* OX버튼 */
+.BT{
+    margin-bottom: 8px;
+    width:300px;
+    height: 40px;
+    margin: 8px;
+    
+}
+
+/* 결과보기 버튼 */
+.result{
+    width:600px;
+    height: 40px;
+    
+}
+
+button{
+    font-family: 'KyoboHand';
+    color: rgb(246, 249, 255);
+    background-color: rgb(51, 63, 80);
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+}
+
+button:focus{
+    outline: 0;
+}
+
+button:hover{
+    color: rgb(246, 249, 255);
+    background-color: rgb(73, 59, 91);
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

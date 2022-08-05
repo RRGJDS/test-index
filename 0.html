@@ -3,11 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="RR.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>동물원 퀴즈-호랑이</title>
 </head>
 <body>
     <p>호랑이 퀴즈</p> <br><br>
-    <button type="button" onclick="location.href='index.html'">돌아가기</button>
+
+    <!-- 호랑이 질문 -->
+    <div class="Q" id="TQ">
+
+    </div>
+
+    <!-- 답체크 -->
+    <div class="A" id="TA">
+
+    </div>
+
+    <button type="button" onclick="location.href='index.html'" class="return">돌아가기</button>
+
+    <script>
+        var AA, score;
+        var startNum, enaNum;
+        var Problem = ['tiger1.png', 'tiger2.png', 'tiger3.png'];
+        var answer = ['O', 'X', 'X'];
+
+        function reset(){
+            startNum = 0;
+            enaNum = 3;
+            score = 0;
+            
+            setQ();
+        }
+
+        reset();
+
+        function setQ(){
+            TQ.innerHTML = "<img scr='./img/"+Problem[startNum]+"' class='problem_img'>";
+
+            if(startNum==enaNum){
+                TA.innerHTML = "<button type='button' class='result' onclick='BT_r_C'>결과보기</button>"
+            }
+
+            else{
+                TA.innerHTML = "<button type='button' class='BT' onclick='BT_O_C'>O</button><button type='button' class='BT' onclick='BT_X_C'>X</button>"
+            }
+        }
+
+        function BT_O_C(){
+            AA='O';
+            if(answer[startNum]==AA){
+                score++;
+            }
+            startNum++;
+            setQ();
+        }
+
+        function BT_X_C(){
+            AA='X';
+            if(answer[startNum]==AA){
+                score++;
+            }
+            startNum++;
+            setQ();
+        }
+
+        function BT_r_C(){
+            alert("당신의 점수는 "+score+"점 입니다.");
+            location.href='index.html'
+        }
+    </script>
 </body>
 </html>
