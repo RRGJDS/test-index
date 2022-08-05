@@ -28,6 +28,7 @@ body{
     width:100px;
     height: 30px;
     font-size: 14px;
+    margin: 100px;
 }
 
 /* OX버튼 */
@@ -41,9 +42,9 @@ body{
 
 /* 결과보기 버튼 */
 .result{
-    width:600px;
+    width:400px;
     height: 40px;
-    
+    margin: 8px;
 }
 
 button{
