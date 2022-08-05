@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="RR.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script> 
         var ST = 0;
@@ -11,8 +12,8 @@
     <title>동물원 퀴즈</title>
 </head>
 <body>
-    <div>동물의 사진을 찍어 보세요!</div>
-<button type="button" onclick="
+    <br><div>동물의 사진을 찍어 보세요!</div><br>
+<button type="button" class="b" onclick="
 if(ST==0){
     init()
     ST += 1;
@@ -22,7 +23,7 @@ else{
 }
 ">시작</button> <br><br>
 
-<button type="button" onClick="
+<button type="button" class="b" onClick="
 if(T==0){
     location.href='0.html'
 }
